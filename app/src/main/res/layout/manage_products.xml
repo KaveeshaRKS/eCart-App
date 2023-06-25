@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Add product category"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/cat_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Category ID"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/cat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cat_id"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Category name"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/shop_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cat_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Shop ID"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/cat_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shop_id"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Category picture"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/et_cat_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/et_cat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_cat_id"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/et_shop_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_cat_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="none"
+            android:textSize="9pt" />
+
+        <ImageView
+            android:id="@+id/cat_image"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_below="@+id/cat_pic"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:src="@drawable/ic_baseline_image_24" />
+
+        <Button
+            android:id="@+id/choose_btn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cat_pic"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="101dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/cat_image"
+            android:text="Choose Image"
+            android:textSize="5pt" />
+
+        <Button
+            android:id="@+id/add_cat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cat_image"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:onClick="add_product_category"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/update_cat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cat_image"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/add_cat"
+            android:onClick="update_product_category"
+            android:text="UPDATE" />
+
+        <Button
+            android:id="@+id/delete_cat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cat_image"
+            android:layout_marginStart="15dp"
+            android:enabled="false"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/update_cat"
+            android:onClick="delete_product_category"
+            android:text="DELETE" />
+
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/update_cat"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="Add product"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/product_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Product ID"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_id"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Product Name"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/product_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Category"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_category"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Existing Amount"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Unit Price"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Discount (If any)"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/shop_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discount"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Shop ID"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/front_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shop_id_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="41dp"
+            android:text="Front Image of Product:"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/et_product_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/et_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_product_id"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="9pt" />
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="210dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/et_product_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_category"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_amount"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="9pt" />
+
+        <Spinner
+            android:id="@+id/spinner_unit"
+            android:layout_width="170dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/et_amount"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/et_price"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/et_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_price"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/et_id_of_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_discount"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="none"
+            android:textSize="9pt" />
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_below="@+id/front_image"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_image_24" />
+
+        <Button
+            android:id="@+id/browse_btn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/front_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="27dp"
+            android:layout_toEndOf="@+id/cat_image"
+            android:text="Choose Image"
+            android:textSize="5pt" />
+
+        <Button
+            android:id="@+id/add_product"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_description"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:onClick="add_product"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/update_product"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_description"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/add_cat"
+            android:onClick="update_product"
+            android:text="UPDATE" />
+
+        <Button
+            android:id="@+id/delete_product"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/update_cat"
+            android:enabled="false"
+            android:layout_below="@+id/product_description"
+            android:onClick="delete_product"
+            android:text="DELETE" />
+
+        <TextView
+            android:id="@+id/set_product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_image"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="Set product description:"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:background="@android:drawable/editbox_background"
+            android:layout_height="300dp"
+            android:layout_below="@+id/set_product_description"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="start"
+            android:text="No description!"
+            android:scrollbars="vertical"
+            android:textSize="9pt" />
+
+
+    </RelativeLayout>
+</ScrollView>

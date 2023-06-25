@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShoppingCart">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/grid_view3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            android:numColumns="2"
+            android:scrollbars="vertical" >
+        </GridView>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:onClick="onRefreshClick"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/grid_view3"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_autorenew_24" />
+
+        <Button
+            android:id="@+id/payable"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageButton"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="See Total Price Payable In LKR:" />
+
+        <TextView
+            android:id="@+id/tv_payable"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/imageButton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/payable"
+            android:gravity="center"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/deliver_to_tv"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/payable"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="Deliver To:"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/et_deliver_to"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/payable"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@id/deliver_to_tv"
+            android:focusable="false"
+            android:inputType="none"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/edit_address_btn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/et_deliver_to"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@id/deliver_to_tv"
+            android:text="EDIT"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/payment_method_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/edit_address_btn"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="Select Payment Method:"
+            android:textSize="8pt" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payment_method_tv"
+            android:layout_marginStart="70dp">
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Credit/ Debit Card"
+                android:textSize="8pt" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Cash On Delivery"
+                android:textSize="8pt" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/pay_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/radio_group"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="40dp"
+            android:text="PAY"
+            android:textSize="8pt" />
+    </RelativeLayout>
+</ScrollView>

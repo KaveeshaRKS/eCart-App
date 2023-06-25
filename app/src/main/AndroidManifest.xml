@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ecart">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ECart"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="com.example.ecart.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CustomerRegistration"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.ecart.CustomerRegistration" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BusinessmanRegistration"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.ecart.BusinessmanRegistration" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ManageProducts"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.ecart.ManageProducts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProductCategory"
+            android:noHistory="false"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.ecart.ProductCategory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Products"
+            android:noHistory="false"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.ecart.Products" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Product"
+            android:noHistory="false"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.ecart.Product" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShoppingCart"
+            android:noHistory="false"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.ecart.ShoppingCart" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".See_Income"
+            android:noHistory="false"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.ecart.See_Income" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExamineCart"
+            android:noHistory="false"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.ecart.ExamineCart" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

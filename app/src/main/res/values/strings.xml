@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">eCart</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <string name="register"><u>Register</u></string>
+
+    <string-array name="units">
+        <item>1 unit</item>
+        <item>1kg</item>
+        <item>1l</item>
+        <item>1m</item>
+    </string-array>
+</resources>

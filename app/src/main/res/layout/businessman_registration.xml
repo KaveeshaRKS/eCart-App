@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Shop ID"
+        android:textSize="11pt" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="41dp"
+        android:text="Name"
+        android:textSize="11pt" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="41dp"
+        android:text="Address"
+        android:textSize="11pt" />
+
+    <TextView
+        android:id="@+id/district"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="41dp"
+        android:text="District"
+        android:textSize="11pt" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/district"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="41dp"
+        android:text="Phone"
+        android:textSize="11pt" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="41dp"
+        android:text="Password"
+        android:textSize="11pt" />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="  Username"
+        android:inputType="textPersonName"
+        android:textSize="11pt" />
+
+    <EditText
+        android:id="@+id/etBusinessName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_id"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="  Ranawaka Stores"
+        android:inputType="textPersonName"
+        android:textSize="11pt" />
+
+    <EditText
+        android:id="@+id/etBusinessAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBusinessName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="  No.24, Araliya road, Colombo7"
+        android:inputType="textPersonName"
+        android:textSize="11pt" />
+
+    <EditText
+        android:id="@+id/etBusinessDistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBusinessAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="  Colombo"
+        android:inputType="textPersonName"
+        android:textSize="11pt" />
+
+    <EditText
+        android:id="@+id/etBusinessPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBusinessDistrict"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="  072-4789072"
+        android:inputType="textPersonName"
+        android:textSize="11pt" />
+
+    <EditText
+        android:id="@+id/etBusinessPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBusinessPhone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="  1234@fV"
+        android:inputType="textPassword"
+        android:textSize="11pt" />
+
+    <Button
+        android:id="@+id/register_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cat_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-3dp"
+        android:onClick="btnRegister2"
+        android:text="Register"
+        android:textSize="9pt"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/cat_image"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/password"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="41dp"
+        android:src="@drawable/ic_baseline_storefront_24" />
+
+    <Button
+        android:id="@+id/browse_btn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBusinessPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="27dp"
+        android:layout_toEndOf="@+id/cat_image"
+        android:text="Choose an Image"
+        android:textSize="5pt" />
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/login" android:icon="@drawable/ic_baseline_login_24" android:title="Sign In"/>
+
+        <item android:id="@+id/logout" android:icon="@drawable/ic_baseline_power_settings_new_24" android:title="Sign Out"/>
+
+        <item android:id="@+id/products" android:icon="@drawable/ic_baseline_checklist_rtl_24" android:title="Manage Products"/>
+
+        <item android:id="@+id/income" android:icon="@drawable/ic_baseline_attach_money_24" android:title="See Income"/>
+
+        <item android:id="@+id/cart" android:icon="@drawable/ic_baseline_search_24" android:title="Examine Cart"/>
+    </group>
+</menu>
